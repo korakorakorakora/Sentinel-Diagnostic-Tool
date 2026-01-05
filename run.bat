@@ -1,5 +1,5 @@
 @echo off
-set "scriptName=t1_merge.ps1"
+set "scriptName=sentinel-rcl.ps1"
 
 :: Check if the PowerShell script actually exists in this folder
 if not exist "%~dp0%scriptName%" (
@@ -21,5 +21,6 @@ if %errorlevel% NEQ 0 (
 :: Run the integrity script
 echo [!] Launching Tournament Integrity Script...
 powershell -NoProfile -ExecutionPolicy Bypass -File "%~dp0%scriptName%"
+
 
 pause
